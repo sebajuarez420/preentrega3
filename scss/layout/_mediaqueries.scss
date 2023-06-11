@@ -79,9 +79,10 @@
     /* Servicios */
 
     .serv {
-        display: flex;
+        /*display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center;*/
+        @include flexbox(column, center, 0);
         color: grey;
         padding: 10px;
         font-size: 20px;
@@ -123,10 +124,11 @@
     }
 
     .tCol {
-        display: flex;
+        /*display: flex;
         flex-direction: column;
         align-items: center;
-        font-size: 30px;
+        font-size: 30px;*/
+        @include flexbox(column, center, 30px);
         color: grey;
         padding: 10px;
         justify-content: space-evenly;
@@ -134,10 +136,11 @@
     }
 
     .serv3 {
-        display: flex;
+        /*display: flex;
         flex-direction: column;
         align-items: center;
-        font-size: 30px;
+        font-size: 30px;*/
+        @include flexbox(column, center, 30px);
         color: grey;
         padding: 10px;
         justify-content: space-evenly;

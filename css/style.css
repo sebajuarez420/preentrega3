@@ -104,9 +104,13 @@ a:hover {
   }
   /* Servicios */
   .serv {
+    /*display: flex;
+    flex-direction: column;
+    align-items: center;*/
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 0;
     color: grey;
     padding: 10px;
     font-size: 20px;
@@ -137,6 +141,10 @@ a:hover {
     grid-area: tServ;
   }
   .tCol {
+    /*display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -146,6 +154,10 @@ a:hover {
     justify-content: space-evenly;
   }
   .serv3 {
+    /*display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;*/
     display: flex;
     flex-direction: column;
     align-items: center;
