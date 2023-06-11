@@ -1,0 +1,188 @@
+* {
+  padding: 0;
+  margin: 0;
+  background-color: beige;
+}
+
+.ultra {
+  font-family: "Ultra", serif;
+}
+
+.img-fluid {
+  width: 100%;
+  height: 100%;
+}
+
+.nav-link:hover {
+  color: rgb(174, 179, 21);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: blueviolet;
+}
+
+.foot {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.fContact {
+  text-align: center;
+  padding: 10px;
+}
+
+.footSub {
+  text-align: center;
+  padding: 10px;
+}
+
+@media only screen and (min-width: 1024px) {
+  header {
+    height: 300px;
+  }
+  ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  ul li {
+    padding: 5px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 30px;
+    color: black;
+  }
+  /* Inicio */
+  .index {
+    display: grid;
+    grid-template-areas: "salonA salonB" "salonC salonC";
+    grid-template-columns: 44% 44%;
+    grid-template-rows: auto auto;
+    justify-content: center;
+  }
+  .salonA {
+    grid-area: salonA;
+  }
+  .salonB {
+    grid-area: salonB;
+  }
+  .salonC {
+    grid-area: salonC;
+  }
+  .salonA, .salonB, .salonC {
+    padding: 10px;
+  }
+  .inicio {
+    display: grid;
+    grid-template-areas: "iniA iniB iniC iniD";
+    grid-template-columns: 21% 23% 23% 21%;
+    grid-template-rows: auto;
+    justify-content: center;
+  }
+  .iniA {
+    grid-area: iniA;
+  }
+  .iniB {
+    grid-area: iniB;
+  }
+  .iniC {
+    grid-area: iniC;
+  }
+  .iniD {
+    grid-area: iniD;
+  }
+  .iniA, .iniB, .iniC, .iniD {
+    padding: 10px;
+  }
+  /* Servicios */
+  .serv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: grey;
+    padding: 10px;
+    font-size: 20px;
+  }
+  .serv1 {
+    display: grid;
+    grid-template-areas: "col tCol" "serv2 servImg" "serv3 tServ";
+    grid-template-columns: 35% 35%;
+    grid-template-rows: auto auto;
+    justify-content: center;
+  }
+  .col {
+    grid-area: col;
+  }
+  .tCol {
+    grid-area: tCol;
+  }
+  .serv2 {
+    grid-area: serv2;
+  }
+  .servImg {
+    grid-area: servImg;
+  }
+  .serv3 {
+    grid-area: serv3;
+  }
+  .tServ {
+    grid-area: tServ;
+  }
+  .tCol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    color: grey;
+    padding: 10px;
+    justify-content: space-evenly;
+  }
+  .serv3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    color: grey;
+    padding: 10px;
+    justify-content: space-evenly;
+  }
+  .col, .tCol, .serv2, .servImg, .serv3, .tServ {
+    padding-top: 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .dNone {
+    display: none;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 40px;
+  }
+  .salonA {
+    padding-top: 10px;
+  }
+  .serv, .tCol, .serv3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 15px;
+    color: grey;
+  }
+}
+.fontServ {
+  font-size: 60px;
+}
+
+/*# sourceMappingURL=style.css.map */
